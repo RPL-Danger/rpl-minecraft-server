@@ -33,4 +33,4 @@ services:
       - "19132:19132/udp"
       - "8123:8123"
     volumes:
-      - ./server:/data
+      - ./:/data/
