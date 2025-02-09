@@ -9,11 +9,11 @@ encoder: "SHA-256"
 # Do you want to teleport players back to their last location after successful login?
 teleport_player_last_location: true
 # Where should players who haven't logged in be sent? You can choose to always send them to the same world they were in the last time by using (null) as the option.
-spawn_world: login
+spawn_world: null
 # How many incorrect password attempts can the player make before the server kicks them out?
 attempts: 5
 # What is the login timeout in seconds before players get kicked?
-time_before_kick: 30
+time_before_kick: 60
 # Minimum characters for password
 min_password_length: 4
 # Maximum characters for password
