@@ -1,6 +1,6 @@
 services:
   mc:
-    image: itzg/minecraft-server
+    image: .
     environment:
       EULA: "true"
       TYPE: "PAPER"
@@ -32,4 +32,4 @@ services:
       - "19132:19132/udp"
       - "8123:8123"
     volumes:
-      - ./:/data
+      - ./server:/data
