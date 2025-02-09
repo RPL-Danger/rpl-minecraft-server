@@ -3,7 +3,7 @@ prefix: '&#FF00FF&lKuburan &7» '
 # how fast should the graves disappear
 # set to -1 to make graves last until the next server restart
 # in seconds
-despawn-time-seconds: -1
+despawn-time-seconds: 86400
 
 # should graves drop all items on the ground when they expire?
 # if false: items will be removed

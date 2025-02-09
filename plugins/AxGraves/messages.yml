@@ -23,8 +23,8 @@ interact:
   not-your-grave: '&#FFAAFFYou can only open your own grave!'
 
 death-message:
-  enabled: false
-  message: '&#FFAAAAYou have died at &f%world% %x%, %y%, %z%&#FFAAAA!'
+  enabled: true
+  message: '&#FF3333 Kamu Telah Mati! Ambil Barang Kamu Sebelum &#FFAAFF24 JAM &#FF3333Jika Tidak, Barangmu Hilang!'
 
 grave-list:
   header: '&#FF00FF&l=== GRAVES ==='
