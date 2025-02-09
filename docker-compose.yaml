@@ -1,6 +1,6 @@
 services:
   mc:
-    image: .
+    build: .
     environment:
       EULA: "true"
       TYPE: "PAPER"
@@ -27,6 +27,7 @@ services:
         https://www.spigotmc.org/resources/creeperstrimgrass.73305/download?version=495861
         https://hangarcdn.papermc.io/plugins/Oliver/FancyHolograms/versions/2.4.2/PAPER/FancyHolograms-2.4.2.jar
         https://dev.bukkit.org/projects/worldguard/files/latest   
+        https://hangarcdn.papermc.io/plugins/Multiverse/Multiverse-Core/versions/4.3.14/PAPER/multiverse-core-4.3.14.jar
     ports:
       - "25566:25565"
       - "19132:19132/udp"
