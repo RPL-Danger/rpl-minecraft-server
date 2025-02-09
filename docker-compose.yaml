@@ -1,6 +1,6 @@
 services:
   mc:
-    build: .
+    image: itzg/minecraft-server
     environment:
       EULA: "true"
       TYPE: "PAPER"
