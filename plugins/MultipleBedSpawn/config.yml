@@ -1,0 +1,15 @@
+lang: enUS
+max-beds: 5
+disable-sleeping: true
+bed-cooldown: 30
+denylist: []
+allowlist: []
+link-worlds: true
+remove-beds-gui: false
+disable-bed-world-desc: true
+disable-bed-coords-desc: false
+spawn-on-sky: true
+exclusive-bed: false
+bed-sharing: false
+command-on-spawn: ''
+run-command-as-player: true

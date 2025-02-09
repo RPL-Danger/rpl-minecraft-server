@@ -1,0 +1,35 @@
+services:
+  mc:
+    image: itzg/minecraft-server
+    environment:
+      EULA: "true"
+      TYPE: "PAPER"
+      ONLINE_MODE: "false"
+      DIFFICULTY: "normal"
+      MAX_PLAYERS: 50
+      PLUGINS: |
+        https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot
+        https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot
+        https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.2.1/PAPER/ViaVersion-5.2.1.jar
+        https://hangarcdn.papermc.io/plugins/ViaVersion/ViaBackwards/versions/5.2.1/PAPER/ViaBackwards-5.2.1.jar
+        https://github.com/EssentialsX/Essentials/releases/download/2.20.1/EssentialsX-2.20.1.jar 
+        https://hangarcdn.papermc.io/plugins/kennytv/Maintenance/versions/4.3.0/PAPER/Maintenance-4.3.0.jar
+        https://hangarcdn.papermc.io/plugins/Black1_TV/Passky/versions/2.4.0/PAPER/Passky-2.4.0.jar
+        https://hangarcdn.papermc.io/plugins/Andre_601/AdvancedServerList/versions/5.5.1/PAPER/AdvancedServerList-Paper-5.5.1.jar
+        https://github.com/GabrielFJunkes/MultipleBedSpawn/releases/download/V1.11.1/MultipleBedSpawn-1.11.1.jar
+        https://hangarcdn.papermc.io/plugins/Gecolay/GSit/versions/2.1.0/PAPER/GSit-2.1.0.jar
+        https://hangarcdn.papermc.io/plugins/Artillex-Studios/AxGraves/versions/1.17.1/PAPER/AxGraves-1.17.1.jar
+        https://cdn.modrinth.com/data/9oopoVvO/versions/GiUxn2yP/NaturalGrowth1.21-v1.5.jar
+        https://cdn.modrinth.com/data/OhduvhIc/versions/cCaIdWST/veinminer-paper-2.3.2.jar
+        https://cdn.modrinth.com/data/fRQREgAc/versions/ImNNT17B/Dynmap-3.7-beta-8-spigot.jar
+        https://hangarcdn.papermc.io/plugins/LOOHP/InteractionVisualizer/versions/1.18.13/PAPER/InteractionVisualizer-1.18.13.0.jar
+        https://github.com/MagicCheese1/Damage-Indicator/releases/download/v2.2.0/DamageIndicator.jar
+        https://www.spigotmc.org/resources/creeperstrimgrass.73305/download?version=495861
+        https://hangarcdn.papermc.io/plugins/Oliver/FancyHolograms/versions/2.4.2/PAPER/FancyHolograms-2.4.2.jar
+        https://dev.bukkit.org/projects/worldguard/files/latest   
+    ports:
+      - "25566:25565"
+      - "19132:19132/udp"
+      - "8123:8123"
+    volumes:
+      - ./:/data
