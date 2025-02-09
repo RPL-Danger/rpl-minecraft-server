@@ -26,10 +26,8 @@ services:
         https://github.com/MagicCheese1/Damage-Indicator/releases/download/v2.2.0/DamageIndicator.jar
         https://github.com/justEli/ExplosionsTrimGrass/releases/download/1.3/CreepersTrimGrass-1.3.jar
         https://hangarcdn.papermc.io/plugins/Oliver/FancyHolograms/versions/2.4.2/PAPER/FancyHolograms-2.4.2.jar
-        https://dev.bukkit.org/projects/worldguard/files/latest  
         https://ci.athion.net/job/FastAsyncWorldEdit/lastSuccessfulBuild/artifact/artifacts/FastAsyncWorldEdit-Paper-2.12.4-SNAPSHOT-1039.jar
         https://hangarcdn.papermc.io/plugins/Multiverse/Multiverse-Core/versions/4.3.14/PAPER/multiverse-core-4.3.14.jar
-        https://dev.bukkit.org/projects/worldedit/files/latest
         https://cdn.modrinth.com/data/HFTnFHKn/versions/e1bc8w5r/AntiPopup-10.1.jar
         https://hangarcdn.papermc.io/plugins/HelpChat/PlaceholderAPI/versions/2.11.6/PAPER/PlaceholderAPI-2.11.6.jar
         https://hangarcdn.papermc.io/plugins/pop4959/Chunky/versions/1.4.28/PAPER/Chunky-Bukkit-1.4.28.jar
