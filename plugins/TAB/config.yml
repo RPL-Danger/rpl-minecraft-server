@@ -3,10 +3,9 @@ header-footer:
   enabled: true
   header:
     - "<#FFFFFF>&m                                                </#FFFF00>"
-    - "&3&lRPLDANGER"
-    - "&7&l>> %animation:Selamat Datang%&3 &l%player%&7&l! &7&l<<"
+    - "&3&lRPL DANGER"
+    - "&7&l>> %animation:Welcome%&3 &l%player%&7&l! &7&l<<"
     - "&7Online players: &f%online%"
-    - "&6Online staff: &e%staffonline%"
     - ""
   footer:
     - "%animation:time%"
@@ -15,6 +14,8 @@ header-footer:
     - "&7%animation:web%"
     - "<#FFFFFF>&m                                                </#FFFF00>"
   disable-condition: '%world%=disabledworld'
+  per-server:
+
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Tablist-name-formatting
 tablist-name-formatting:

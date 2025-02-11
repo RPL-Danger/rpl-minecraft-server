@@ -1,13 +1,17 @@
 services:
   mc:
     image: itzg/minecraft-server
+    restart: unless-stopped
     environment:
       EULA: "true"
       TYPE: "PAPER"
       ONLINE_MODE: "false"
       DIFFICULTY: "normal"
       MAX_PLAYERS: 50
+      INIT_MEMORY: "2G"
+      MAX_MEMORY: "16G"
       PLUGINS: |
+        https://github.com/2008Choco/VeinMiner/releases/download/v2.2.6/VeinMiner-Bukkit-2.2.6.jar
         https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot
         https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot
         https://hangarcdn.papermc.io/plugins/ViaVersion/ViaVersion/versions/5.2.1/PAPER/ViaVersion-5.2.1.jar
@@ -20,23 +24,24 @@ services:
         https://hangarcdn.papermc.io/plugins/Gecolay/GSit/versions/2.1.0/PAPER/GSit-2.1.0.jar
         https://hangarcdn.papermc.io/plugins/Artillex-Studios/AxGraves/versions/1.17.1/PAPER/AxGraves-1.17.1.jar
         https://cdn.modrinth.com/data/9oopoVvO/versions/GiUxn2yP/NaturalGrowth1.21-v1.5.jar
-        https://cdn.modrinth.com/data/OhduvhIc/versions/cCaIdWST/veinminer-paper-2.3.2.jar
-        https://cdn.modrinth.com/data/fRQREgAc/versions/ImNNT17B/Dynmap-3.7-beta-8-spigot.jar
+        https://cdn.modrinth.com/data/34T8oVNY/versions/OvwBThgN/Pl3xMap-1.21.4-521.jar
         https://hangarcdn.papermc.io/plugins/LOOHP/InteractionVisualizer/versions/1.18.13/PAPER/InteractionVisualizer-1.18.13.0.jar
         https://github.com/MagicCheese1/Damage-Indicator/releases/download/v2.2.0/DamageIndicator.jar
         https://github.com/justEli/ExplosionsTrimGrass/releases/download/1.3/CreepersTrimGrass-1.3.jar
         https://hangarcdn.papermc.io/plugins/Oliver/FancyHolograms/versions/2.4.2/PAPER/FancyHolograms-2.4.2.jar
-        https://ci.athion.net/job/FastAsyncWorldEdit/lastSuccessfulBuild/artifact/artifacts/FastAsyncWorldEdit-Paper-2.12.4-SNAPSHOT-1039.jar
         https://hangarcdn.papermc.io/plugins/Multiverse/Multiverse-Core/versions/4.3.14/PAPER/multiverse-core-4.3.14.jar
-        https://cdn.modrinth.com/data/HFTnFHKn/versions/e1bc8w5r/AntiPopup-10.1.jar
         https://hangarcdn.papermc.io/plugins/HelpChat/PlaceholderAPI/versions/2.11.6/PAPER/PlaceholderAPI-2.11.6.jar
         https://hangarcdn.papermc.io/plugins/pop4959/Chunky/versions/1.4.28/PAPER/Chunky-Bukkit-1.4.28.jar
         https://github.com/NEZNAMY/TAB/releases/download/5.0.6/TAB.v5.0.6.jar
         https://dev.bukkit.org/projects/coreprotect/files/latest
+        https://cdn.modrinth.com/data/1u6JkXh5/versions/4jRlujfz/worldedit-bukkit-7.3.10.jar
+        https://cdn.modrinth.com/data/DKY9btbd/versions/S1KKDczu/worldguard-bukkit-7.0.13-beta-2-dist.jar
+        https://cdn.modrinth.com/data/q9XiqcY2/versions/rf4ejGz3/Pl3xMapExtras-1.2.0.jar
       SPIGET_RESOURCES: 109043
+    # disere path
     ports:
       - "25566:25565"
       - "19132:19132/udp"
-      - "8123:8123"
+      - "8080:8080"
     volumes:
       - ./:/data/

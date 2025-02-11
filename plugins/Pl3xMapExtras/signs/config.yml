@@ -1,0 +1,198 @@
+world-settings:
+  default:
+    layer:
+      # Label for map layer
+      label: Signs
+      # Show controls for map layer
+      show-controls: true
+      # Whether map layer is hidden by default
+      default-hidden: false
+      # Update interval for map layer
+      update-interval: 5
+      # Priority for map layer
+      priority: 99
+      # zIndex for map layer
+      z-index: 99
+      # Custom CSS for the sign's layer.
+      css: |-
+        @import url('https://fonts.cdnfonts.com/css/minecraftia');
+        div.leaflet-pl3xmap_acacia_sign_popup-pane,
+        div.leaflet-pl3xmap_bamboo_sign_popup-pane,
+        div.leaflet-pl3xmap_birch_sign_popup-pane,
+        div.leaflet-pl3xmap_cherry_sign_popup-pane,
+        div.leaflet-pl3xmap_crimson_sign_popup-pane,
+        div.leaflet-pl3xmap_dark_oak_sign_popup-pane,
+        div.leaflet-pl3xmap_jungle_sign_popup-pane,
+        div.leaflet-pl3xmap_mangrove_sign_popup-pane,
+        div.leaflet-pl3xmap_oak_sign_popup-pane,
+        div.leaflet-pl3xmap_spruce_sign_popup-pane,
+        div.leaflet-pl3xmap_warped_sign_popup-pane {
+          z-index:999;
+          pointer-events: none;
+        }
+        div.leaflet-pl3xmap_acacia_sign_popup-pane .leaflet-popup-content-wrapper::before,
+        div.leaflet-pl3xmap_bamboo_sign_popup-pane .leaflet-popup-content-wrapper::before,
+        div.leaflet-pl3xmap_birch_sign_popup-pane .leaflet-popup-content-wrapper::before,
+        div.leaflet-pl3xmap_cherry_sign_popup-pane .leaflet-popup-content-wrapper::before,
+        div.leaflet-pl3xmap_crimson_sign_popup-pane .leaflet-popup-content-wrapper::before,
+        div.leaflet-pl3xmap_dark_oak_sign_popup-pane .leaflet-popup-content-wrapper::before,
+        div.leaflet-pl3xmap_jungle_sign_popup-pane .leaflet-popup-content-wrapper::before,
+        div.leaflet-pl3xmap_mangrove_sign_popup-pane .leaflet-popup-content-wrapper::before,
+        div.leaflet-pl3xmap_oak_sign_popup-pane .leaflet-popup-content-wrapper::before,
+        div.leaflet-pl3xmap_spruce_sign_popup-pane .leaflet-popup-content-wrapper::before,
+        div.leaflet-pl3xmap_warped_sign_popup-pane .leaflet-popup-content-wrapper::before {
+          content: "";
+          position: absolute;
+          top: -500vh;
+          left: -500vw;
+          width: 1000vw;
+          height: 1000vh;
+          backdrop-filter: blur(2px);
+          background-color: rgba(0,0,0,0.5);
+          z-index: -1;
+        }
+        div.leaflet-pl3xmap_acacia_sign_popup-pane div.leaflet-popup-content-wrapper {
+          background-image: url('images/icon/registered/pl3xmap_acacia_sign_tooltip.png') !important;
+        }
+        div.leaflet-pl3xmap_bamboo_sign_popup-pane div.leaflet-popup-content-wrapper {
+          background-image: url('images/icon/registered/pl3xmap_bamboo_sign_tooltip.png') !important;
+        }
+        div.leaflet-pl3xmap_birch_sign_popup-pane div.leaflet-popup-content-wrapper {
+          background-image: url('images/icon/registered/pl3xmap_birch_sign_tooltip.png') !important;
+        }
+        div.leaflet-pl3xmap_cherry_sign_popup-pane div.leaflet-popup-content-wrapper {
+          background-image: url('images/icon/registered/pl3xmap_cherry_sign_tooltip.png') !important;
+        }
+        div.leaflet-pl3xmap_crimson_sign_popup-pane div.leaflet-popup-content-wrapper {
+          background-image: url('images/icon/registered/pl3xmap_crimson_sign_tooltip.png') !important;
+        }
+        div.leaflet-pl3xmap_dark_oak_sign_popup-pane div.leaflet-popup-content-wrapper {
+          background-image: url('images/icon/registered/pl3xmap_dark_oak_sign_tooltip.png') !important;
+        }
+        div.leaflet-pl3xmap_jungle_sign_popup-pane div.leaflet-popup-content-wrapper {
+          background-image: url('images/icon/registered/pl3xmap_jungle_sign_tooltip.png') !important;
+        }
+        div.leaflet-pl3xmap_mangrove_sign_popup-pane div.leaflet-popup-content-wrapper {
+          background-image: url('images/icon/registered/pl3xmap_mangrove_sign_tooltip.png') !important;
+        }
+        div.leaflet-pl3xmap_oak_sign_popup-pane div.leaflet-popup-content-wrapper {
+          background-image: url('images/icon/registered/pl3xmap_oak_sign_tooltip.png') !important;
+        }
+        div.leaflet-pl3xmap_spruce_sign_popup-pane div.leaflet-popup-content-wrapper {
+          background-image: url('images/icon/registered/pl3xmap_spruce_sign_tooltip.png') !important;
+        }
+        div.leaflet-pl3xmap_warped_sign_popup-pane div.leaflet-popup-content-wrapper {
+          background-image: url('images/icon/registered/pl3xmap_warped_sign_tooltip.png') !important;
+        }
+        div.leaflet-pl3xmap_acacia_sign_popup-pane div.leaflet-popup-content-wrapper,
+        div.leaflet-pl3xmap_bamboo_sign_popup-pane div.leaflet-popup-content-wrapper,
+        div.leaflet-pl3xmap_birch_sign_popup-pane div.leaflet-popup-content-wrapper,
+        div.leaflet-pl3xmap_cherry_sign_popup-pane div.leaflet-popup-content-wrapper,
+        div.leaflet-pl3xmap_crimson_sign_popup-pane div.leaflet-popup-content-wrapper,
+        div.leaflet-pl3xmap_dark_oak_sign_popup-pane div.leaflet-popup-content-wrapper,
+        div.leaflet-pl3xmap_jungle_sign_popup-pane div.leaflet-popup-content-wrapper,
+        div.leaflet-pl3xmap_mangrove_sign_popup-pane div.leaflet-popup-content-wrapper,
+        div.leaflet-pl3xmap_oak_sign_popup-pane div.leaflet-popup-content-wrapper,
+        div.leaflet-pl3xmap_spruce_sign_popup-pane div.leaflet-popup-content-wrapper,
+        div.leaflet-pl3xmap_warped_sign_popup-pane div.leaflet-popup-content-wrapper {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          width: 196px !important;
+          min-width: 196px;
+          max-width: 196px;
+          height: 210px !important;
+          min-height: 210px;
+          max-height: 210px;
+          background: transparent;
+          background-repeat: no-repeat;
+          box-shadow: none;
+        }
+        div.leaflet-pl3xmap_acacia_sign_popup-pane div.leaflet-popup-content,
+        div.leaflet-pl3xmap_bamboo_sign_popup-pane div.leaflet-popup-content,
+        div.leaflet-pl3xmap_birch_sign_popup-pane div.leaflet-popup-content,
+        div.leaflet-pl3xmap_cherry_sign_popup-pane div.leaflet-popup-content,
+        div.leaflet-pl3xmap_crimson_sign_popup-pane div.leaflet-popup-content,
+        div.leaflet-pl3xmap_dark_oak_sign_popup-pane div.leaflet-popup-content,
+        div.leaflet-pl3xmap_jungle_sign_popup-pane div.leaflet-popup-content,
+        div.leaflet-pl3xmap_mangrove_sign_popup-pane div.leaflet-popup-content,
+        div.leaflet-pl3xmap_oak_sign_popup-pane div.leaflet-popup-content,
+        div.leaflet-pl3xmap_spruce_sign_popup-pane div.leaflet-popup-content,
+        div.leaflet-pl3xmap_warped_sign_popup-pane div.leaflet-popup-content {
+          overflow: hidden !important;
+          margin: 0;
+          padding: 16px 14px 14px 14px !important;
+          border: 0;
+          width: 196px !important;
+          min-width: 196px;
+          max-width: 196px;
+          height: 210px !important;
+          min-height: 210px;
+          max-height: 210px;
+          font-family: 'Minecraftia', sans-serif;
+          font-weight: 700;
+          font-size:13px;
+          line-height: 1.5;
+          color: #000000;
+        }
+        div.leaflet-pl3xmap_acacia_sign_popup-pane div.leaflet-popup-tip-container,
+        div.leaflet-pl3xmap_bamboo_sign_popup-pane div.leaflet-popup-tip-container,
+        div.leaflet-pl3xmap_birch_sign_popup-pane div.leaflet-popup-tip-container,
+        div.leaflet-pl3xmap_cherry_sign_popup-pane div.leaflet-popup-tip-container,
+        div.leaflet-pl3xmap_crimson_sign_popup-pane div.leaflet-popup-tip-container,
+        div.leaflet-pl3xmap_dark_oak_sign_popup-pane div.leaflet-popup-tip-container,
+        div.leaflet-pl3xmap_jungle_sign_popup-pane div.leaflet-popup-tip-container,
+        div.leaflet-pl3xmap_mangrove_sign_popup-pane div.leaflet-popup-tip-container,
+        div.leaflet-pl3xmap_oak_sign_popup-pane div.leaflet-popup-tip-container,
+        div.leaflet-pl3xmap_spruce_sign_popup-pane div.leaflet-popup-tip-container,
+        div.leaflet-pl3xmap_warped_sign_popup-pane div.leaflet-popup-tip-container {
+          display: none;
+        }
+        div.leaflet-pl3xmap_acacia_sign_popup-pane div,
+        div.leaflet-pl3xmap_bamboo_sign_popup-pane div,
+        div.leaflet-pl3xmap_birch_sign_popup-pane div,
+        div.leaflet-pl3xmap_cherry_sign_popup-pane div,
+        div.leaflet-pl3xmap_crimson_sign_popup-pane div,
+        div.leaflet-pl3xmap_dark_oak_sign_popup-pane div,
+        div.leaflet-pl3xmap_jungle_sign_popup-pane div,
+        div.leaflet-pl3xmap_mangrove_sign_popup-pane div,
+        div.leaflet-pl3xmap_oak_sign_popup-pane div,
+        div.leaflet-pl3xmap_spruce_sign_popup-pane div,
+        div.leaflet-pl3xmap_warped_sign_popup-pane div {
+          transition: all 0.25s;
+        }
+        center.pl3xmap_signs_popup {
+          pointer-events: auto;
+          min-width: 168px;
+          min-height: 80px;
+        }
+    marker:
+      icon:
+        # The size (in pixels) the icon should be.
+        size:
+          x: 20.0
+          z: 20.0
+      popup:
+        # Contents of the icon's popup.
+        content: |-
+          <center class="pl3xmap_signs_popup">
+            <line1><br/>
+            <line2><br/>
+            <line3><br/>
+            <line4>
+          </center>
+    sign:
+      add:
+        # The particles to play when a sign is added to Pl3xMap.
+        # https://minecraft.wiki/w/Particles_(Java_Edition)
+        particles: happy_villager
+        # The sound to play when a sign is added to Pl3xMap.
+        # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+        sound: entity.player.levelup
+      remove:
+        # The particles to play when a sign is removed from Pl3xMap.
+        # https://minecraft.wiki/w/Particles_(Java_Edition)
+        particles: wax_on
+        # The sound to play when a sign is removed from Pl3xMap.
+        # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+        sound: entity.player.levelup

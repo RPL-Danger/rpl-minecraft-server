@@ -1,0 +1,45 @@
+world-settings:
+  default:
+    layer:
+      # Label for map layer
+      label: Banners
+      # Show controls for map layer
+      show-controls: true
+      # Whether map layer is hidden by default
+      default-hidden: false
+      # Update interval for map layer
+      update-interval: 5
+      # Priority for map layer
+      priority: 99
+      # zIndex for map layer
+      z-index: 99
+    marker:
+      icon:
+        # The size (in pixels) the icon should be.
+        size:
+          x: 32.0
+          z: 32.0
+        rotation: {}
+        # The size (in pixels) the icon's shadow image should be.
+        shadow-size:
+          x: 20.0
+          z: 20.0
+      tooltip:
+        # Contents of the icon's popup.
+        content: <center><name></center>
+        # Optional offset of the tooltip position.
+        offset:
+          x: 0
+          z: -6
+        # Direction where to open the tooltip. Possible values are: right,
+        # left, top, bottom, center, auto. auto will dynamically switch
+        # between right and left according to the tooltip position
+        # on the map.
+        direction: TOP
+      popup:
+        auto-pan:
+          padding: {}
+    root:
+      banners:
+        # Should banners be displayed on block place?
+        block-place: true

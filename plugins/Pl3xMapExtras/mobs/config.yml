@@ -1,0 +1,26 @@
+world-settings:
+  default:
+    layer:
+      # Label for map layer
+      label: Mobs
+      # Show controls for map layer
+      show-controls: true
+      # Whether map layer is hidden by default
+      default-hidden: false
+      # Update interval for map layer
+      update-interval: 1
+      # Priority for map layer
+      priority: 99
+      # zIndex for map layer
+      z-index: 1
+    marker:
+      icon:
+        # The size (in pixels) the icon should be.
+        size:
+          x: 20.0
+          z: 20.0
+      popup:
+        # Contents of the icon's popup.
+        content: <mob-id>
+    # Only show mobs that are exposed to the sky.
+    only-show-mobs-exposed-to-sky: true

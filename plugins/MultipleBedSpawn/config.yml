@@ -1,6 +1,6 @@
 lang: enUS
 max-beds: 5
-disable-sleeping: true
+disable-sleeping: false
 bed-cooldown: 30
 denylist: []
 allowlist: []
