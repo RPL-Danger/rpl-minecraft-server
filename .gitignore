@@ -1,1 +1,15 @@
 server/
+world/
+versions/
+logs/
+libraries/
+.cache
+.fabric
+mods/
+fabric-server-mc*
+.fabric-manifest.json
+.rcon-cli*
+usercache.json
+whitelist.json
+ops.json
+.install-fabric.env
