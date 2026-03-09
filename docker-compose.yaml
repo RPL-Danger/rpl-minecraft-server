@@ -32,6 +32,8 @@ services:
         https://cdn.modrinth.com/data/RpXNx59A/versions/363AFEd4/auth-v1.6.2.jar
         https://cdn.modrinth.com/data/VKXzIykF/versions/UOglNAYK/sit-1.21.11-29.jar
         https://cdn.modrinth.com/data/MI2DOogd/versions/dMjjSH0K/sit-datapack-1.1.jar
+        https://cdn.modrinth.com/data/9s6osm5g/versions/xuX40TN5/cloth-config-21.11.153-fabric.jar
+        https://cdn.modrinth.com/data/e0M1UDsY/versions/T8rv7kwo/collective-1.21.11-8.13.jar
       SPIGET_RESOURCES: 
     ports:
       - "25565:25565"
