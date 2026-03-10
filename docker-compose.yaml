@@ -25,12 +25,13 @@ services:
         https://cdn.modrinth.com/data/hXiIvTyT/versions/Oa9ZDzZq/EssentialsX-2.21.2.jar
         https://cdn.modrinth.com/data/bYazc7fd/versions/c0iAbWyA/InvSee%2B%2B.jar
         https://cdn.modrinth.com/data/vkW3dyrm/versions/Ytk0wkyr/Passky-3.3.0.jar
-        https://hangarcdn.papermc.io/plugins/Gecolay/GSit/versions/2.1.0/PAPER/GSit-2.1.0.jar
         https://github.com/GabrielFJunkes/MultipleBedSpawn/releases/download/V1.11.1/MultipleBedSpawn-1.11.1.jar
         https://cdn.modrinth.com/data/5QNgOj66/versions/GH9a5QUE/FancyHolograms-2.9.1.jar
         https://cdn.modrinth.com/data/8JFIQokh/versions/HUYpTuXh/creeper-recover-1.1.0-spigot.jar
         https://cdn.modrinth.com/data/xss83sOY/versions/Tn5XsZ7X/AdvancedServerList-Paper-5.7.2.jar
+        https://github.com/vectrix-space/ignite/releases/download/v1.2.0/ignite.jar
         https://cdn.modrinth.com/data/52W2RPUh/versions/j0cgTvE4/timber-1.8.0.jar
+
       SPIGET_RESOURCES: 
     ports:
       - "25565:25565"
