@@ -4,7 +4,7 @@ services:
     restart: unless-stopped
     environment:
       EULA: "true"
-      TYPE: "FABRIC"
+      TYPE: "PAPER"
       ONLINE_MODE: "false"
       DIFFICULTY: "normal"
       MAX_PLAYERS: 50
