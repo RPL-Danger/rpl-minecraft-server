@@ -13,3 +13,17 @@ usercache.json
 whitelist.json
 ops.json
 .install-fabric.env
+.paper.env
+.paper/
+.papermc-manifest.json
+banned-ips.json
+banned-players.json
+bukkit.yml
+cache/
+commands.yml
+config/
+eula.txt
+paper-*.jar
+plugins/
+server.properties
+spigot.yml
